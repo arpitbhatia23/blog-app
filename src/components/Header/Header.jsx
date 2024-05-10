@@ -24,7 +24,7 @@ function Header() {
 },
 {
     name: "All Posts",
-    slug: "/all-posts",
+    slug: "/all-post",
     active: authStatus,
 },
 {
@@ -39,7 +39,9 @@ function Header() {
   <div className='mr-4'>
     <Link to='/'>
       <Logo width='70px'/>
-<ul>
+      </Link>
+      </div>
+<ul className='flex ml-auto'>
   {navItmes.map((item)=>
   item.active? (
     <li key={item.name}>
@@ -52,9 +54,6 @@ function Header() {
     </li>
   )}
 </ul>
-     
-    </Link>
-  </div>
 </nav>
 </Contaniner>
    </header>
